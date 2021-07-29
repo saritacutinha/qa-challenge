@@ -1,0 +1,56 @@
+{
+    "name": "qa-ct-frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "@testing-library/jest-dom": "^5.11.4",
+      "@testing-library/react": "^11.1.0",
+      "@testing-library/user-event": "^12.1.10",
+      "@types/jest": "^26.0.24",
+      "@types/node": "^12.0.0",
+      "@types/react": "^17.0.0",
+      "@types/react-dom": "^17.0.0",
+      "axios": "^0.21.1",
+      "classnames": "^2.3.1",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-scripts": "4.0.3",
+      "todomvc-app-css": "^2.4.1",
+      "typescript": "^4.1.2",
+      "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "test:pact": "dotenv react-scripts test --testTimeout 30000 pact/*.spec.ts",
+      "eject": "react-scripts eject",
+      "cypress": "cypress open",
+      "cypress:all":"cypress run"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@pact-foundation/pact": "^9.15.5",
+      "@pact-foundation/pact-node": "^10.12.2",
+      "cypress": "^8.0.0",
+      "dotenv-cli": "^4.0.0"
+  }
+  }
+  
