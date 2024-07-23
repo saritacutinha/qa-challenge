@@ -1,6 +1,6 @@
 # Software Developer in Test Technical Challenge
 
-## About the challenge
+## About the challenge.
 
 ```
 The goal is to add more tests.
